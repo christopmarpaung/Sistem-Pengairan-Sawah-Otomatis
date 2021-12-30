@@ -64,7 +64,7 @@ void loop() {
   
   delay(1000);
 
-  if (jarak >= 2 && jarak <=4 || Kelembaban >= 0 && Kelembaban <= 500) {
+  if (jarak >= 2 && jarak <=4 && Kelembaban >= 0 && Kelembaban <= 600) {
     Serial.println("Gerbang Terbuka ");
     lcd.setCursor(0,0);
     lcd.println("Gerbang Terbuka ");
@@ -72,7 +72,7 @@ void loop() {
     delay(1000);
   }
 
-  else if (jarak > 4 && jarak <= 5 || Kelembaban >= 500 && Kelembaban <= 800  ){
+  else if (jarak > 4 && jarak <= 6 && Kelembaban >= 500 && Kelembaban <= 1000  ){
     Serial.println("Gerbang Terbuka Penuh");
     lcd.setCursor(0,0);
     lcd.println("Gerbang Terbuka Penuh");
