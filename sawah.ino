@@ -28,7 +28,7 @@ void setup() {
 }
 void loop() {
   
-  long duration, jarak;
+  int duration, jarak;
   
   digitalWrite(triggerPin, LOW);
   delayMicroseconds(2); 
@@ -54,7 +54,7 @@ void loop() {
   digitalWrite(4, HIGH);
   delay(10);
   
-  float Kelembaban = analogRead(SensorPin);
+  int Kelembaban = analogRead(SensorPin);
   Serial.print("Kelembaban :");
   Serial.print(Kelembaban);
   Serial.println(" %");
